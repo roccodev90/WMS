@@ -1,5 +1,19 @@
 @WMS.API_HostAddress = http://localhost:5156
 
+### Crea task (sostituisci targetLocationId con un Id reale da DB)
+POST {{WMS.API_HostAddress}}/api/warehousetasks
+Content-Type: application/json
+
+{
+  "movementKind": 0,
+  "priority": 10,
+  "targetLocationId": "00000000-0000-0000-0000-000000000001",
+  "sourceLocationId": null,
+  "containerId": null
+}
+
+###
+
 GET {{WMS.API_HostAddress}}/api/warehousetasks/00000000-0000-0000-0000-000000000001
 Accept: application/json
 

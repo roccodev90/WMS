@@ -12,5 +12,6 @@ public sealed class WarehouseTaskMappingProfile : Profile
     public WarehouseTaskMappingProfile()
     {
         CreateMap<WarehouseTask, WarehouseTaskDto>();
+        CreateMap<WarehouseTask, CreateMovementTaskResponseDto>();
     }
 }
