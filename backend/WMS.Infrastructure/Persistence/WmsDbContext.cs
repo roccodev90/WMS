@@ -10,8 +10,14 @@ public sealed class WmsDbContext : DbContext
     {
     }
 
-    public DbSet<Product> Products => Set<Product>();
+    public DbSet<Location> Locations => Set<Location>();
+    public DbSet<Container> Containers => Set<Container>();
+    public DbSet<WarehouseTask> WarehouseTasks => Set<WarehouseTask>();
 
+    /// <summary>
+    /// Configura le entità del modello.
+    /// </summary>
+    /// <param name="modelBuilder">Il costruttore del modello.</param>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(WmsDbContext).Assembly);
