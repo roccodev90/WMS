@@ -1,0 +1,6 @@
+@WCS.API_HostAddress = http://localhost:5156
+
+GET {{WCS.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

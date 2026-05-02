@@ -1,0 +1,52 @@
+## Build
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.rsuser
+
+## Rider
+.idea/
+
+## NuGet
+*.nupkg
+*.snupkg
+**/packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Test / coverage
+TestResults/
+[Tt]emp/
+*.coverage
+*.coveragexml
+
+## OS
+.DS_Store
+Thumbs.db
+
+## User secrets / local env
+appsettings.*.local.json
+*.env
+.env.*
+
+## EF
+*.db
+*.db-shm
+*.db-wal
